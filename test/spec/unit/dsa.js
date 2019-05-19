@@ -107,12 +107,12 @@ describe('DSA', function() {
   it('should create a key in a webworker', function (done) {
     this.timeout(25000)
 
-    try {
-      var ww = require("webworker-threads")
-    } catch (e) {
-      console.log("skipping webworker test. couldn't load optional dep")
-      return done()
-    }
+    // try {
+    //   var ww = require("webworker-threads")
+    // } catch (e) {
+    //   console.log("skipping webworker test. couldn't load optional dep")
+    //   return done()
+    // }
 
     DSA.createInWebWorker(null, function (key) {
       assert.ok(HLP.between(key.q, BigInt.twoToThe(N - 1), BigInt.twoToThe(N)), 'q in between.')

@@ -178,12 +178,12 @@ describe('SM', function () {
     this.timeout(15000)
     var both = false
 
-    try {
-      var ww = require("webworker-threads")
-    } catch (e) {
-      console.log("skipping webworker test. couldn't load optional dep")
-      return done()
-    }
+    // try {
+    //   var ww = require("webworker-threads")
+    // } catch (e) {
+    //   console.log("skipping webworker test. couldn't load optional dep")
+    //   return done()
+    // }
 
     // use webworkers; default options
     userA.smw = {}
@@ -235,12 +235,12 @@ describe('SM', function () {
     this.timeout(15000)
     var both = false
 
-    try {
-      var ww = require("webworker-threads")
-    } catch (e) {
-      console.log("skipping webworker test. couldn't load optional dep")
-      return done()
-    }
+    // try {
+    //   var ww = require("webworker-threads")
+    // } catch (e) {
+    //   console.log("skipping webworker test. couldn't load optional dep")
+    //   return done()
+    // }
 
     // use webworkers; default options
     userA.smw = {}
